@@ -1,0 +1,51 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #e8f5d5;
+}
+
+.navContainer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+.navItems {
+    float: right;
+}
+  
+.navA {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+    color: #111;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+.icons{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.icon{
+  height: 40px;
+}
+ .introImg{
+  border: 5px ;
+  border-radius: 50%;
+ }
