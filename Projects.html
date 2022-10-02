@@ -12,11 +12,19 @@
     <title>Projects</title>
 </head>
 <body>
-    <ul class="navContainer">
-        <li class = "navItems"><a class = "navA" href = "About.html">About</a></li>
-        <li class = "navItems"><a class = "navA" href = "Projects.html">Projects</a></li>
-        <li class = "navItems"><a class = "navA" href = "Contact.html">Contact</a></li>
-        <li float: left class = "navItems"><a class = "navA" href = "Homepage.html">Moselle Pattison-Christie</a></li>
-    </ul>
+    <header>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="hamburger"><img src="hamburger.png"></label>
+        <h1><a href = "Homepage.html">Moselle PC</a></h1>
+        <nav>
+            <ul>
+                <li><a href = "Projects.html">Projects</a></li>
+                <li><a href = "Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
 </body>
 </html>
