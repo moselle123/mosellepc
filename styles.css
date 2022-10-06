@@ -1,12 +1,8 @@
 *{
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
-/* @media screen and (min-width: 900px) {
-    body{
-        padding-inline: max(3em, 100px);
-    }
-} */
 /* ###################################   Navbar   ##########################################*/
 
 header{
@@ -76,13 +72,13 @@ li a:hover {
     display: none;
 }
 
-.fullscreen{
+/* .fullscreen{
     display: none;
     background-color: #62B6CB;
     width: 100vw;
     height: 100vh;
     z-index: 998;
-}
+} */
 
 /* ###################################   Intro   ##########################################*/
 
@@ -194,4 +190,35 @@ li a:hover {
 
 .about li{
     padding: 1em;
+}
+
+/*################################# Js Fades ########################################*/
+
+.fade-up {
+    opacity: 0;
+    transition: opacity 400ms ease-in;
+}
+  
+.fade-up.appear {
+    opacity: 1;
+}
+
+.from-left {
+    transform: translateX(-50%);
+}
+  
+.from-right {
+    transform: translateX(50%);
+}
+  
+.from-left,
+.from-right {
+    opacity: 0;
+}
+  
+.from-left.appear,
+.from-right.appear {
+    transform: translateX(0);
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    opacity: 1;
 }
