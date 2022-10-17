@@ -195,3 +195,78 @@ li a:hover {
 .about li{
     padding: 1em;
 }
+
+/* ###################################   Projects   ##########################################*/
+.projects{
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    margin: 2em;
+    padding: 2em;
+    border-radius: 10%;
+    max-width: 40em;
+    display: flex;
+    flex-direction: column;
+    justify-content: left baseline;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: clamp(20em, 15em + 10vw, 50em);
+    height: clamp(20em, 15em + 10vw, 50em);
+    background-size: contain;
+}
+
+.card h1{
+    font-weight: bold;
+    font-size: 2.5em;
+}
+.card img{
+    width: clamp(15em, 15em + 10vw, 35em);
+    height: auto;
+    padding-top: 1em;
+}
+
+.card-img{
+    border-radius: 10%;
+}
+
+.link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .snake{
+    background-image: url("snake_img.png");
+  }
+
+  .planets{
+    background-image: url("planets1.png");
+    color: #FFF;
+  }
+
+/* ###################################   Contact   ##########################################*/
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+.title{
+    font-size: clamp(1em, 10vw + 1em, 3em);
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact img{
+    width: clamp(5em, 5em + 10vw, 20em);
+    height: auto;
+}
