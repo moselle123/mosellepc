@@ -1,12 +1,8 @@
 *{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
-/* @media screen and (min-width: 900px) {
-    body{
-        padding-inline: max(3em, 100px);
-    }
-} */
 /* ###################################   Navbar   ##########################################*/
 
 header{
@@ -18,7 +14,7 @@ header{
     justify-content: center;
     background-color: #FFF;
     position: relative;
-    padding-top: 1em;
+    padding-top: 0.5em;
 }
 
 nav{
@@ -33,10 +29,11 @@ nav{
 }
 
 header h1 a{
-    font-weight: bold;
+    font-size: 1.1.6em;
     text-decoration: none;
     color: #1b4965;
-    padding-left: 20px;
+    padding-left: 10px;
+    font-family: 'Silkscreen', cursive;
 }
 
 nav ul {
@@ -48,14 +45,15 @@ nav ul {
   
 nav li{
     padding: 14px;
-    font-size: 1.2rem;
 }
   
 nav a {
     color: #1b4965;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none; 
+    text-decoration: none;
+    font-family: 'Silkscreen', cursive;
+    font-size: 2em;
 }
   
 li a:hover {
@@ -68,32 +66,28 @@ li a:hover {
 } 
 
 .hamburger img{
-    width: 2em;
-    height: 2em;
+    width: 3em;
+    height: 3em;
 }
 
 .nav-toggle{
     display: none;
 }
 
-.fullscreen{
-    display: none;
-    background-color: #62B6CB;
-    width: 100vw;
-    height: 100vh;
-    z-index: 998;
-}
-
 /* ###################################   Intro   ##########################################*/
+
+.home{
+    margin-left: 2em;
+    margin-right: 2em;
+}
 
 .intro{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    width: 85vw;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    width: 100vw - 4em;
     padding-top: 1.5em;
+    
  }
 
 .intro-name{
@@ -141,11 +135,8 @@ li a:hover {
 .about{
     display: flex;
     flex-direction: column;
-
     justify-content: center;
-    width: 85vw;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    width: 100vw - 4em;
     padding-top: 1.5em;
 }
 
@@ -271,6 +262,7 @@ li a:hover {
 .title{
     font-size: 1.5em;
     text-align: center;
+    padding-bottom: 1em;
 }
 
 .contact a{
@@ -284,4 +276,5 @@ li a:hover {
 
 .contact ul{
     list-style-type: none;
+    padding: 0;
 }
